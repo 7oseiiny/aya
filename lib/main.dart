@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'language/first_screen.dart';
+import 'screens/home/home.dart';
 
 
 
@@ -12,5 +12,5 @@ void main() async {
         fontFamily: 'Cocon',
       ),
       debugShowCheckedModeBanner: false,
-      home: FirstScreen()));
+      home: const home()));
 }
