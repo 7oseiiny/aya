@@ -5,6 +5,6 @@ class home_5 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text("home5");
+    return Text("hoome5");
   }
 }

@@ -17,7 +17,7 @@ class _new_notificationState extends State<new_notification> {
         Container(
           width: width_containers,
           height: 225,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(16),
               topRight: Radius.circular(16),
@@ -32,7 +32,7 @@ class _new_notificationState extends State<new_notification> {
               Container(
                 width: width_containers,
                 height: 35,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
@@ -46,7 +46,7 @@ class _new_notificationState extends State<new_notification> {
                   child: (Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
+                      Text(
                         "6/4/2022  1:39 pm",
                         style: TextStyle(
                           color: Colors.black,
@@ -58,7 +58,7 @@ class _new_notificationState extends State<new_notification> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          const Text(
+                          Text(
                             "اشعار رحلة جديدة",
                             style: TextStyle(
                               color: Colors.black,
@@ -67,7 +67,7 @@ class _new_notificationState extends State<new_notification> {
                               fontWeight: FontWeight.w300,
                             ),
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 10,
                           ),
                           Container(
@@ -87,7 +87,7 @@ class _new_notificationState extends State<new_notification> {
                   )),
                 ),
               ),
-              const SizedBox(
+              SizedBox(
                 height: 5,
               ),
               Padding(
@@ -105,9 +105,9 @@ class _new_notificationState extends State<new_notification> {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xbf000000),
+                              color: Color(0xbf000000),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("رحلة صيد",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -118,7 +118,7 @@ class _new_notificationState extends State<new_notification> {
                             ),
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 5,
                         ),
                         Expanded(
@@ -127,9 +127,9 @@ class _new_notificationState extends State<new_notification> {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xbf000000),
+                              color: Color(0xbf000000),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("يخوت",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -140,7 +140,7 @@ class _new_notificationState extends State<new_notification> {
                             ),
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 5,
                         ),
                         Expanded(
@@ -149,9 +149,9 @@ class _new_notificationState extends State<new_notification> {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xffFFAC26),
+                              color: Color(0xffFFAC26),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("رحلات بحرية",
                                   style: TextStyle(
                                     color: Colors.black,
@@ -174,24 +174,24 @@ class _new_notificationState extends State<new_notification> {
                     padding: const EdgeInsets.only(left: 8,),
                     child: Column(
                       children: [
-                        const button_capture_travil_(),
-                        const SizedBox(
+                        button_capture_travil_(),
+                        SizedBox(
                           height: 8,
                         ),
-                        button_(background_color: const Color(0xbf000000),text:"ترك",onpressed: (){},font_color: Colors.white, ),
+                        button_(background_color: Color(0xbf000000),text:"ترك",onpressed: (){},font_color: Colors.white, ),
                       ],
                     ),
                   ),
                   Column(
                     children: [
-                      const SizedBox(height: 15,),
+                      SizedBox(height: 15,),
 
                       Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              const Text(
+                              Text(
                                 "سارة القحطاني",
                                 style: TextStyle(
                                   color: Colors.black,
@@ -202,7 +202,7 @@ class _new_notificationState extends State<new_notification> {
                               ),
                               Row(
                                 children: [
-                                  const Text(
+                                  Text(
                                     "4.5 ",
                                     style: TextStyle(
                                       color: Color(0xffff9f00),
@@ -221,7 +221,7 @@ class _new_notificationState extends State<new_notification> {
                               ),
                               Row(
                                 children: [
-                                  const Text(
+                                  Text(
                                     "#1001258",
                                     style: TextStyle(
                                       color: Color(0xbf000000),
@@ -230,14 +230,14 @@ class _new_notificationState extends State<new_notification> {
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
-                                  const SizedBox(width: 15,),
+                                  SizedBox(width: 15,),
                                   Container(
                                     width: 1,
                                     height: 11,
-                                    color: const Color.fromRGBO(0, 0, 0, .08),
+                                    color: Color.fromRGBO(0, 0, 0, .08),
                                   ),
-                                  const SizedBox(width: 10,),
-                                  const Text(
+                                  SizedBox(width: 10,),
+                                  Text(
                                     "6",
                                     style: TextStyle(
                                       color: Color(0xffFF9F00),
@@ -246,7 +246,7 @@ class _new_notificationState extends State<new_notification> {
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
-                                  const Text(
+                                  Text(
                                     " : عدد الافراد",
                                     style: TextStyle(
                                       fontSize: 12,
@@ -258,7 +258,7 @@ class _new_notificationState extends State<new_notification> {
                               )
                             ],
                           ),
-                          const SizedBox(width: 10,),
+                          SizedBox(width: 10,),
                           CircleAvatar(
                             radius: 33.615,
                             backgroundColor: Colors.red,
@@ -266,7 +266,7 @@ class _new_notificationState extends State<new_notification> {
                               "assets/imgs/User_profile_picture.png",
                             ),
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 10,
                           )
                         ],
@@ -275,13 +275,13 @@ class _new_notificationState extends State<new_notification> {
                   ),
                 ],
               ),
-              const SizedBox(height: 20,),
+              SizedBox(height: 20,),
               Row(
                 children: [
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "السعر المحدد للرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -290,8 +290,8 @@ class _new_notificationState extends State<new_notification> {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "600 ريال",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -306,12 +306,12 @@ class _new_notificationState extends State<new_notification> {
                   Container(
                     width: 1,
                     height: 60,
-                    color:const Color.fromRGBO(0, 0, 0, .08) ,
+                    color:Color.fromRGBO(0, 0, 0, .08) ,
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "ساعة بدأ الرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -320,8 +320,8 @@ class _new_notificationState extends State<new_notification> {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "01:30 م",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -336,12 +336,12 @@ class _new_notificationState extends State<new_notification> {
                   Container(
                     width: 1,
                     height: 60,
-                    color:const Color.fromRGBO(0, 0, 0, .08) ,
+                    color:Color.fromRGBO(0, 0, 0, .08) ,
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "تاريخ  بدا الرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -350,8 +350,8 @@ class _new_notificationState extends State<new_notification> {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "يوم الجمعة 15 فبراير",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -384,21 +384,21 @@ class _all_informationState extends State<all_information> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const new_notification(),
+        new_notification(),
         Container(
           width: double.infinity,
           height: 1,
-          color:const Color.fromRGBO(0, 0, 0, .08) ,
+          color:Color.fromRGBO(0, 0, 0, .08) ,
         ),
         Container(
-          color: const Color(0xffF3F4F6),
+          color: Color(0xffF3F4F6),
           child: Row(
             children: [
               Expanded(
                 child: Column(
                   children: [
-                    const SizedBox(height: 10,),
-                    const Text(
+                    SizedBox(height: 10,),
+                    Text(
                       "وسيلة الدفع",
                       style: TextStyle(
                         color: Colors.black,
@@ -407,8 +407,8 @@ class _all_informationState extends State<all_information> {
                         fontWeight: FontWeight.w300,
                       ),
                     ),
-                    const SizedBox(height: 10,),
-                    const Text(
+                    SizedBox(height: 10,),
+                    Text(
                       "البطاقة الائتمانية",
                       style: TextStyle(
                         color: Color(0xffff9f00),
@@ -423,13 +423,13 @@ class _all_informationState extends State<all_information> {
               Container(
                 width: 1,
                 height: 52,
-                color:const Color.fromRGBO(0, 0, 0, .08) ,
+                color:Color.fromRGBO(0, 0, 0, .08) ,
               ),
               Expanded(
                 child: Column(
                   children: [
-                    const SizedBox(height: 10,),
-                    const Text(
+                    SizedBox(height: 10,),
+                    Text(
                       "ساعة الانتهاء",
                       style: TextStyle(
                         color: Colors.black,
@@ -438,8 +438,8 @@ class _all_informationState extends State<all_information> {
                         fontWeight: FontWeight.w300,
                       ),
                     ),
-                    const SizedBox(height: 10,),
-                    const Text(
+                    SizedBox(height: 10,),
+                    Text(
                       "01:30 م",
                       style: TextStyle(
                         color: Color(0xffff9f00),
@@ -454,13 +454,13 @@ class _all_informationState extends State<all_information> {
               Container(
                 width: 1,
                 height: 52,
-                color:const Color.fromRGBO(0, 0, 0, .08) ,
+                color:Color.fromRGBO(0, 0, 0, .08) ,
               ),
               Expanded(
                 child: Column(
                   children: [
-                    const SizedBox(height: 10,),
-                    const Text(
+                    SizedBox(height: 10,),
+                    Text(
                       "تاريخ انتهاء الرحلة",
                       style: TextStyle(
                         color: Colors.black,
@@ -469,8 +469,8 @@ class _all_informationState extends State<all_information> {
                         fontWeight: FontWeight.w300,
                       ),
                     ),
-                    const SizedBox(height: 10,),
-                    const Text(
+                    SizedBox(height: 10,),
+                    Text(
                       "يوم الجمعة 16 فبراير",
                       style: TextStyle(
                         color: Color(0xffff9f00),
@@ -489,10 +489,10 @@ class _all_informationState extends State<all_information> {
         Container(
           width: double.infinity,
           height: 1,
-          color:const Color.fromRGBO(0, 0, 0, .08) ,
+          color:Color.fromRGBO(0, 0, 0, .08) ,
         ),
         Container(
-          color: const Color(0xffF3F4F6),
+          color: Color(0xffF3F4F6),
           child: Row(
             children: [
               Row(
@@ -505,13 +505,13 @@ class _all_informationState extends State<all_information> {
                         Text(
                           "الوقت المتبقي لإنتهاء الرحلة",
                           style: TextStyle(
-                            color: time > 10 ? const Color(0xff000000): const Color(0xffE55050),
+                            color: time > 10 ? Color(0xff000000): Color(0xffE55050),
                             fontSize: 12,
                             fontFamily: "CoconÆ Next Arabic",
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const Text(
+                        Text(
                           "سوف يبدأ عداد انتهاء الرحلة\nبعد بدأ الرحلة مباشرة",
                           textAlign: TextAlign.right,
                           style: TextStyle(
@@ -524,31 +524,31 @@ class _all_informationState extends State<all_information> {
                       ],
                     ),
                   ),
-                  const timer(),
-                  const SizedBox(width: 15,)
+                  timer(),
+                  SizedBox(width: 15,)
                 ],
               ),
               Container(
                 width: 1,
                 height: 80,
-                color:const Color.fromRGBO(0, 0, 0, .08) ,
+                color:Color.fromRGBO(0, 0, 0, .08) ,
               ),
               Expanded(
                 child: Column(
                   children: [
-                    const SizedBox(height: 5,),
+                    SizedBox(height: 5,),
                     Text(
                       "الوقت المتبقي لبدأ الرحلة",
                       style: TextStyle(
-                        color: time > 10 ? const Color(0xff000000): const Color(0xffE55050),
+                        color: time > 10 ? Color(0xff000000): Color(0xffE55050),
                         fontSize: 12,
                         fontFamily: "CoconÆ Next Arabic",
                         fontWeight: FontWeight.w300,
                       ),
                     ),
-                    const SizedBox(height: 5,),
-                    const timer(),
-                    const SizedBox(height: 10,),
+                    SizedBox(height: 5,),
+                    timer(),
+                    SizedBox(height: 10,),
 
                   ],
                 ),
@@ -561,13 +561,13 @@ class _all_informationState extends State<all_information> {
         Container(
           width: double.infinity,
           height: 1,
-          color:const Color.fromRGBO(0, 0, 0, .08) ,
+          color:Color.fromRGBO(0, 0, 0, .08) ,
         ),
         Container(
           width: width_containers,
-          color: const Color(0xffF3F4F6),
-          child: const Padding(
-            padding: EdgeInsets.all(10.0),
+          color: Color(0xffF3F4F6),
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
             child: Text(
               "لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال",
               textAlign: TextAlign.right,
@@ -598,8 +598,8 @@ class _timerState extends State<timer> {
       totalSteps: 60,
       currentStep: time,
       stepSize: 5,
-      selectedColor: time > 10 ? const Color(0xffFFAC26): const Color(0xffE55050),
-      unselectedColor: time > 10 ? const Color.fromRGBO(255, 172, 38, .05): const Color.fromRGBO(255, 89, 71, .05),
+      selectedColor: time > 10 ? Color(0xffFFAC26): Color(0xffE55050),
+      unselectedColor: time > 10 ? Color.fromRGBO(255, 172, 38, .05): Color.fromRGBO(255, 89, 71, .05),
       padding: 0,
       width: 45,
       height: 45,
@@ -608,11 +608,11 @@ class _timerState extends State<timer> {
       child:Center(
         child: Column(
             children: [
-              const SizedBox(height: 2,),
+              SizedBox(height: 2,),
               Text(
                 "$time",
                 style: TextStyle(
-                  color: time > 10 ? const Color(0xffFFAC26): const Color(0xffE55050),
+                  color: time > 10 ? Color(0xffFFAC26): Color(0xffE55050),
                   fontSize: 15,
                   fontFamily: "CoconÆ Next Arabic",
                   fontWeight: FontWeight.w300,
@@ -621,7 +621,7 @@ class _timerState extends State<timer> {
               Text(
                 "ثانية",
                 style: TextStyle(
-                  color: time > 10 ? const Color(0xffFFAC26): const Color(0xffE55050),
+                  color: time > 10 ? Color(0xffFFAC26): Color(0xffE55050),
                   fontSize: 8,
                   fontFamily: "CoconÆ Next Arabic",
                   fontWeight: FontWeight.w300,
@@ -643,7 +643,7 @@ class flight_cancellation extends StatelessWidget {
         Container(
           width: width_containers,
           height: 225,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(16),
               topRight: Radius.circular(16),
@@ -658,7 +658,7 @@ class flight_cancellation extends StatelessWidget {
               Container(
                 width: width_containers,
                 height: 35,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
@@ -672,7 +672,7 @@ class flight_cancellation extends StatelessWidget {
                   child: (Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
+                      Text(
                         "6/4/2022  1:39 pm",
                         style: TextStyle(
                           color: Colors.black,
@@ -684,7 +684,7 @@ class flight_cancellation extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          const Text(
+                          Text(
                             "تم التقاط رحله",
                             style: TextStyle(
                               color: Colors.black,
@@ -693,7 +693,7 @@ class flight_cancellation extends StatelessWidget {
                               fontWeight: FontWeight.w300,
                             ),
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 10,
                           ),
                           Container(
@@ -713,7 +713,7 @@ class flight_cancellation extends StatelessWidget {
                   )),
                 ),
               ),
-              const SizedBox(
+              SizedBox(
                 height: 5,
               ),
               Padding(
@@ -731,9 +731,9 @@ class flight_cancellation extends StatelessWidget {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xbf000000),
+                              color: Color(0xbf000000),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("رحلة صيد",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -744,7 +744,7 @@ class flight_cancellation extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 5,
                         ),
                         Expanded(
@@ -753,9 +753,9 @@ class flight_cancellation extends StatelessWidget {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xbf000000),
+                              color: Color(0xbf000000),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("يخوت",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -766,7 +766,7 @@ class flight_cancellation extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 5,
                         ),
                         Expanded(
@@ -775,9 +775,9 @@ class flight_cancellation extends StatelessWidget {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xffFFAC26),
+                              color: Color(0xffFFAC26),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("رحلات بحرية",
                                   style: TextStyle(
                                     color: Colors.black,
@@ -800,17 +800,17 @@ class flight_cancellation extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 8,),
                     child: Column(
                       children: [
-                        button_(background_color: const Color.fromRGBO(115, 220, 122, 30),text:"تم الالتقاط",onpressed: (){},font_color: Colors.black, ),
+                        button_(background_color: Color.fromRGBO(115, 220, 122, 30),text:"تم الالتقاط",onpressed: (){},font_color: Colors.black, ),
 
-                        const SizedBox(
+                        SizedBox(
                           height: 8,
                         ),
-                        const button_travil_cancellation_()                      ],
+                        button_travil_cancellation_()                      ],
                     ),
                   ),
                   Column(
                     children: [
-                      const SizedBox(height: 15,),
+                      SizedBox(height: 15,),
 
                       Row(
                         children: [
@@ -822,9 +822,9 @@ class flight_cancellation extends StatelessWidget {
                                   Image.asset(
                                     "assets/imgs/chat.png",
                                   ),
-                                  const SizedBox(width: 10,),
+                                  SizedBox(width: 10,),
 
-                                  const Text(
+                                  Text(
                                     "سارة القحطاني",
                                     style: TextStyle(
                                       color: Colors.black,
@@ -837,7 +837,7 @@ class flight_cancellation extends StatelessWidget {
                               ),
                               Row(
                                 children: [
-                                  const Text(
+                                  Text(
                                     "4.5 ",
                                     style: TextStyle(
                                       color: Color(0xffff9f00),
@@ -856,7 +856,7 @@ class flight_cancellation extends StatelessWidget {
                               ),
                               Row(
                                 children: [
-                                  const Text(
+                                  Text(
                                     "#1001258",
                                     style: TextStyle(
                                       color: Color(0xbf000000),
@@ -865,14 +865,14 @@ class flight_cancellation extends StatelessWidget {
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
-                                  const SizedBox(width: 15,),
+                                  SizedBox(width: 15,),
                                   Container(
                                     width: 1,
                                     height: 11,
-                                    color: const Color.fromRGBO(0, 0, 0, .08),
+                                    color: Color.fromRGBO(0, 0, 0, .08),
                                   ),
-                                  const SizedBox(width: 10,),
-                                  const Text(
+                                  SizedBox(width: 10,),
+                                  Text(
                                     "6",
                                     style: TextStyle(
                                       color: Color(0xffFF9F00),
@@ -881,7 +881,7 @@ class flight_cancellation extends StatelessWidget {
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
-                                  const Text(
+                                  Text(
                                     " : عدد الافراد",
                                     style: TextStyle(
                                       fontSize: 12,
@@ -893,7 +893,7 @@ class flight_cancellation extends StatelessWidget {
                               )
                             ],
                           ),
-                          const SizedBox(width: 10,),
+                          SizedBox(width: 10,),
                           CircleAvatar(
                             radius: 33.615,
                             backgroundColor: Colors.red,
@@ -901,7 +901,7 @@ class flight_cancellation extends StatelessWidget {
                               "assets/imgs/User_profile_picture.png",
                             ),
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 10,
                           )
                         ],
@@ -910,13 +910,13 @@ class flight_cancellation extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 20,),
+              SizedBox(height: 20,),
               Row(
                 children: [
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "السعر المحدد للرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -925,8 +925,8 @@ class flight_cancellation extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "600 ريال",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -941,12 +941,12 @@ class flight_cancellation extends StatelessWidget {
                   Container(
                     width: 1,
                     height: 60,
-                    color:const Color.fromRGBO(0, 0, 0, .08) ,
+                    color:Color.fromRGBO(0, 0, 0, .08) ,
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "ساعة بدأ الرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -955,8 +955,8 @@ class flight_cancellation extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "01:30 م",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -971,12 +971,12 @@ class flight_cancellation extends StatelessWidget {
                   Container(
                     width: 1,
                     height: 60,
-                    color:const Color.fromRGBO(0, 0, 0, .08) ,
+                    color:Color.fromRGBO(0, 0, 0, .08) ,
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "تاريخ  بدا الرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -985,8 +985,8 @@ class flight_cancellation extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "يوم الجمعة 15 فبراير",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -1007,7 +1007,7 @@ class flight_cancellation extends StatelessWidget {
         Container(
           width: width_containers,
           height: 44,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             borderRadius: BorderRadius.only(topLeft: Radius.circular(0), topRight: Radius.circular(0), bottomLeft: Radius.circular(16), bottomRight: Radius.circular(16), ),
             boxShadow: [
               BoxShadow(
@@ -1032,10 +1032,10 @@ class flight_cancellation extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Icon(Icons.keyboard_arrow_down,size: 18),
+                child: Icon(Icons.keyboard_arrow_down,size: 18),
               ),
-              const SizedBox(width: 3),
-              const Text(
+              SizedBox(width: 3),
+              Text(
                 "عرض باقي التفاصيل",
                 style: TextStyle(
                   color: Colors.black,
@@ -1059,7 +1059,7 @@ class new_review extends StatelessWidget {
     return                    Container(
       width: width_containers,
       height: 200,
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(16)
         ),
         color: Color.fromRGBO(243, 244, 246, 1),
@@ -1070,7 +1070,7 @@ class new_review extends StatelessWidget {
           Container(
             width: width_containers,
             height: 35,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(16),
                 topRight: Radius.circular(16),
@@ -1084,7 +1084,7 @@ class new_review extends StatelessWidget {
               child: (Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
+                  Text(
                     "6/4/2022  1:39 pm",
                     style: TextStyle(
                       color: Colors.black,
@@ -1096,7 +1096,7 @@ class new_review extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const Text(
+                      Text(
                         "تقييم جديد",
                         style: TextStyle(
                           color: Colors.black,
@@ -1105,7 +1105,7 @@ class new_review extends StatelessWidget {
                           fontWeight: FontWeight.w300,
                         ),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 10,
                       ),
                       Container(
@@ -1125,7 +1125,7 @@ class new_review extends StatelessWidget {
               )),
             ),
           ),
-          const SizedBox(
+          SizedBox(
             height: 5,
           ),
           Row(
@@ -1135,23 +1135,23 @@ class new_review extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 8,),
                 child: Column(
                   children: [
-                    const SizedBox(
+                    SizedBox(
                       height: 8,
                     ),
-                    button_(background_color: const Color(0xbf000000),text:"عرض التقييم",onpressed: (){},font_color: Colors.white, ),
+                    button_(background_color: Color(0xbf000000),text:"عرض التقييم",onpressed: (){},font_color: Colors.white, ),
                   ],
                 ),
               ),
               Column(
                 children: [
-                  const SizedBox(height: 10,),
+                  SizedBox(height: 10,),
 
                   Row(
                     children: [
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          const Text(
+                          Text(
                             "سارة القحطاني",
                             style: TextStyle(
                               color: Colors.black,
@@ -1162,7 +1162,7 @@ class new_review extends StatelessWidget {
                           ),
                           Row(
                             children: [
-                              const Text(
+                              Text(
                                 "4.5 ",
                                 style: TextStyle(
                                   color: Color(0xffff9f00),
@@ -1181,7 +1181,7 @@ class new_review extends StatelessWidget {
                           ),
                         ],
                       ),
-                      const SizedBox(width: 10,),
+                      SizedBox(width: 10,),
                       CircleAvatar(
                         radius: 33.615,
                         backgroundColor: Colors.red,
@@ -1189,7 +1189,7 @@ class new_review extends StatelessWidget {
                           "assets/imgs/User_profile_picture.png",
                         ),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 10,
                       )
                     ],
@@ -1200,9 +1200,9 @@ class new_review extends StatelessWidget {
           ),
           Container(
             width: width_containers,
-            color: const Color(0xffF3F4F6),
-            child: const Padding(
-              padding: EdgeInsets.all(10.0),
+            color: Color(0xffF3F4F6),
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
               child: Text(
                 "لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه\nوضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ",
                 textAlign: TextAlign.right,
@@ -1232,7 +1232,7 @@ class done_send_travil extends StatelessWidget {
         Container(
           width: width_containers,
           height: 225,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(16),
               topRight: Radius.circular(16),
@@ -1247,7 +1247,7 @@ class done_send_travil extends StatelessWidget {
               Container(
                 width: width_containers,
                 height: 35,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
@@ -1261,7 +1261,7 @@ class done_send_travil extends StatelessWidget {
                   child: (Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
+                      Text(
                         "6/4/2022  1:39 pm",
                         style: TextStyle(
                           color: Colors.black,
@@ -1273,7 +1273,7 @@ class done_send_travil extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          const Text(
+                          Text(
                             "تم ارسال الرحله",
                             style: TextStyle(
                               color: Colors.black,
@@ -1282,7 +1282,7 @@ class done_send_travil extends StatelessWidget {
                               fontWeight: FontWeight.w300,
                             ),
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 10,
                           ),
                           Container(
@@ -1302,7 +1302,7 @@ class done_send_travil extends StatelessWidget {
                   )),
                 ),
               ),
-              const SizedBox(
+              SizedBox(
                 height: 5,
               ),
               Padding(
@@ -1320,9 +1320,9 @@ class done_send_travil extends StatelessWidget {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xbf000000),
+                              color: Color(0xbf000000),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("رحلة صيد",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -1333,7 +1333,7 @@ class done_send_travil extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 5,
                         ),
                         Expanded(
@@ -1342,9 +1342,9 @@ class done_send_travil extends StatelessWidget {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xbf000000),
+                              color: Color(0xbf000000),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("يخوت",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -1355,7 +1355,7 @@ class done_send_travil extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 5,
                         ),
                         Expanded(
@@ -1364,9 +1364,9 @@ class done_send_travil extends StatelessWidget {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xffFFAC26),
+                              color: Color(0xffFFAC26),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("رحلات بحرية",
                                   style: TextStyle(
                                     color: Colors.black,
@@ -1389,24 +1389,24 @@ class done_send_travil extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 8,),
                     child: Column(
                       children: [
-                        button_(background_color: const Color(0xffFFAC26),text:"بدا الرحله",onpressed: (){},font_color: Colors.black, ),
-                        const SizedBox(
+                        button_(background_color: Color(0xffFFAC26),text:"بدا الرحله",onpressed: (){},font_color: Colors.black, ),
+                        SizedBox(
                           height: 8,
                         ),
-                        const button_travil_cancellation_()
+                        button_travil_cancellation_()
                       ],
                     ),
                   ),
                   Column(
                     children: [
-                      const SizedBox(height: 15,),
+                      SizedBox(height: 15,),
 
                       Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              const Text(
+                              Text(
                                 "عنوان الرحله",
                                 style: TextStyle(
                                   color: Colors.black,
@@ -1417,7 +1417,7 @@ class done_send_travil extends StatelessWidget {
                               ),
                               Row(
                                 children: [
-                                  const Text(
+                                  Text(
                                     "4.5 ",
                                     style: TextStyle(
                                       color: Color(0xffff9f00),
@@ -1436,7 +1436,7 @@ class done_send_travil extends StatelessWidget {
                               ),
                               Row(
                                 children: [
-                                  const Text(
+                                  Text(
                                     "#1001258",
                                     style: TextStyle(
                                       color: Color(0xbf000000),
@@ -1445,14 +1445,14 @@ class done_send_travil extends StatelessWidget {
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
-                                  const SizedBox(width: 15,),
+                                  SizedBox(width: 15,),
                                   Container(
                                     width: 1,
                                     height: 11,
-                                    color: const Color.fromRGBO(0, 0, 0, .08),
+                                    color: Color.fromRGBO(0, 0, 0, .08),
                                   ),
-                                  const SizedBox(width: 10,),
-                                  const Text(
+                                  SizedBox(width: 10,),
+                                  Text(
                                     "6",
                                     style: TextStyle(
                                       color: Color(0xffFF9F00),
@@ -1461,7 +1461,7 @@ class done_send_travil extends StatelessWidget {
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
-                                  const Text(
+                                  Text(
                                     " : سعة الفرد",
                                     style: TextStyle(
                                       fontSize: 12,
@@ -1473,7 +1473,7 @@ class done_send_travil extends StatelessWidget {
                               )
                             ],
                           ),
-                          const SizedBox(width: 10,),
+                          SizedBox(width: 10,),
                           CircleAvatar(
                             radius: 33.615,
                             backgroundColor: Colors.red,
@@ -1481,7 +1481,7 @@ class done_send_travil extends StatelessWidget {
                               "assets/imgs/travil.png",
                             ),
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 10,
                           )
                         ],
@@ -1490,13 +1490,13 @@ class done_send_travil extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 20,),
+              SizedBox(height: 20,),
               Row(
                 children: [
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "السعر المحدد للرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -1505,8 +1505,8 @@ class done_send_travil extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "600 ريال",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -1521,12 +1521,12 @@ class done_send_travil extends StatelessWidget {
                   Container(
                     width: 1,
                     height: 60,
-                    color:const Color.fromRGBO(0, 0, 0, .08) ,
+                    color:Color.fromRGBO(0, 0, 0, .08) ,
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "سعر الفرد",
                           style: TextStyle(
                             color: Colors.black,
@@ -1535,8 +1535,8 @@ class done_send_travil extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "01:30 م",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -1551,12 +1551,12 @@ class done_send_travil extends StatelessWidget {
                   Container(
                     width: 1,
                     height: 60,
-                    color:const Color.fromRGBO(0, 0, 0, .08) ,
+                    color:Color.fromRGBO(0, 0, 0, .08) ,
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "الحجوزات حتى الان",
                           style: TextStyle(
                             color: Colors.black,
@@ -1565,8 +1565,8 @@ class done_send_travil extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "لاتوجد حجوزات حتي الأن",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -1587,7 +1587,7 @@ class done_send_travil extends StatelessWidget {
         Container(
           width: width_containers,
           height: 44,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             borderRadius: BorderRadius.only(topLeft: Radius.circular(0), topRight: Radius.circular(0), bottomLeft: Radius.circular(16), bottomRight: Radius.circular(16), ),
             boxShadow: [
               BoxShadow(
@@ -1612,10 +1612,10 @@ class done_send_travil extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Icon(Icons.keyboard_arrow_down,size: 18),
+                child: Icon(Icons.keyboard_arrow_down,size: 18),
               ),
-              const SizedBox(width: 3),
-              const Text(
+              SizedBox(width: 3),
+              Text(
                 "عرض باقي التفاصيل",
                 style: TextStyle(
                   color: Colors.black,
@@ -1641,7 +1641,7 @@ class done_capture_travil extends StatelessWidget {
         Container(
           width: width_containers,
           height: 240,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(16),
               topRight: Radius.circular(16),
@@ -1656,7 +1656,7 @@ class done_capture_travil extends StatelessWidget {
               Container(
                 width: width_containers,
                 height: 35,
-                decoration: const BoxDecoration(
+                decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
@@ -1670,7 +1670,7 @@ class done_capture_travil extends StatelessWidget {
                   child: (Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
+                      Text(
                         "6/4/2022  1:39 pm",
                         style: TextStyle(
                           color: Colors.black,
@@ -1682,7 +1682,7 @@ class done_capture_travil extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          const Text(
+                          Text(
                             "تم التقاط رحله",
                             style: TextStyle(
                               color: Colors.black,
@@ -1691,7 +1691,7 @@ class done_capture_travil extends StatelessWidget {
                               fontWeight: FontWeight.w300,
                             ),
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 10,
                           ),
                           Container(
@@ -1711,7 +1711,7 @@ class done_capture_travil extends StatelessWidget {
                   )),
                 ),
               ),
-              const SizedBox(
+              SizedBox(
                 height: 5,
               ),
               Padding(
@@ -1729,9 +1729,9 @@ class done_capture_travil extends StatelessWidget {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xbf000000),
+                              color: Color(0xbf000000),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("رحلة صيد",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -1742,7 +1742,7 @@ class done_capture_travil extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 5,
                         ),
                         Expanded(
@@ -1751,9 +1751,9 @@ class done_capture_travil extends StatelessWidget {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xbf000000),
+                              color: Color(0xbf000000),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("يخوت",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -1764,7 +1764,7 @@ class done_capture_travil extends StatelessWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 5,
                         ),
                         Expanded(
@@ -1773,9 +1773,9 @@ class done_capture_travil extends StatelessWidget {
                             height: 13.70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5),
-                              color: const Color(0xffFFAC26),
+                              color: Color(0xffFFAC26),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text("رحلات بحرية",
                                   style: TextStyle(
                                     color: Colors.black,
@@ -1798,27 +1798,27 @@ class done_capture_travil extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 8,),
                     child: Column(
                       children: [
-                        button_(background_color: const Color.fromRGBO(115, 220, 122, 30),text:"تم الالتقاط",onpressed: (){},font_color: Colors.black, ),
-                        const SizedBox(
+                        button_(background_color: Color.fromRGBO(115, 220, 122, 30),text:"تم الالتقاط",onpressed: (){},font_color: Colors.black, ),
+                        SizedBox(
                           height: 8,
                         ),
-                        button_(background_color: const Color.fromRGBO(255, 172, 38, .54),text:"فى انتظار الدفع",onpressed: (){},font_color: Colors.black, ),
-                        const SizedBox(
+                        button_(background_color: Color.fromRGBO(255, 172, 38, .54),text:"فى انتظار الدفع",onpressed: (){},font_color: Colors.black, ),
+                        SizedBox(
                           height: 8,
                         ),
-                        const button_travil_cancellation_()                      ],
+                        button_travil_cancellation_()                      ],
                     ),
                   ),
                   Column(
                     children: [
-                      const SizedBox(height: 15,),
+                      SizedBox(height: 15,),
 
                       Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              const Text(
+                              Text(
                                 "سارة القحطاني",
                                 style: TextStyle(
                                   color: Colors.black,
@@ -1829,7 +1829,7 @@ class done_capture_travil extends StatelessWidget {
                               ),
                               Row(
                                 children: [
-                                  const Text(
+                                  Text(
                                     "4.5 ",
                                     style: TextStyle(
                                       color: Color(0xffff9f00),
@@ -1848,7 +1848,7 @@ class done_capture_travil extends StatelessWidget {
                               ),
                               Row(
                                 children: [
-                                  const Text(
+                                  Text(
                                     "#1001258",
                                     style: TextStyle(
                                       color: Color(0xbf000000),
@@ -1857,14 +1857,14 @@ class done_capture_travil extends StatelessWidget {
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
-                                  const SizedBox(width: 15,),
+                                  SizedBox(width: 15,),
                                   Container(
                                     width: 1,
                                     height: 11,
-                                    color: const Color.fromRGBO(0, 0, 0, .08),
+                                    color: Color.fromRGBO(0, 0, 0, .08),
                                   ),
-                                  const SizedBox(width: 10,),
-                                  const Text(
+                                  SizedBox(width: 10,),
+                                  Text(
                                     "6",
                                     style: TextStyle(
                                       color: Color(0xffFF9F00),
@@ -1873,7 +1873,7 @@ class done_capture_travil extends StatelessWidget {
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
-                                  const Text(
+                                  Text(
                                     " : عدد الافراد",
                                     style: TextStyle(
                                       fontSize: 12,
@@ -1885,7 +1885,7 @@ class done_capture_travil extends StatelessWidget {
                               )
                             ],
                           ),
-                          const SizedBox(width: 10,),
+                          SizedBox(width: 10,),
                           CircleAvatar(
                             radius: 33.615,
                             backgroundColor: Colors.red,
@@ -1893,7 +1893,7 @@ class done_capture_travil extends StatelessWidget {
                               "assets/imgs/User_profile_picture.png",
                             ),
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 10,
                           )
                         ],
@@ -1902,13 +1902,13 @@ class done_capture_travil extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 20,),
+              SizedBox(height: 20,),
               Row(
                 children: [
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "السعر المحدد للرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -1917,8 +1917,8 @@ class done_capture_travil extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "600 ريال",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -1933,12 +1933,12 @@ class done_capture_travil extends StatelessWidget {
                   Container(
                     width: 1,
                     height: 60,
-                    color:const Color.fromRGBO(0, 0, 0, .08) ,
+                    color:Color.fromRGBO(0, 0, 0, .08) ,
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "ساعة بدأ الرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -1947,8 +1947,8 @@ class done_capture_travil extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "01:30 م",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -1963,12 +1963,12 @@ class done_capture_travil extends StatelessWidget {
                   Container(
                     width: 1,
                     height: 60,
-                    color:const Color.fromRGBO(0, 0, 0, .08) ,
+                    color:Color.fromRGBO(0, 0, 0, .08) ,
                   ),
                   Expanded(
                     child: Column(
                       children: [
-                        const Text(
+                        Text(
                           "تاريخ  بدا الرحلة",
                           style: TextStyle(
                             color: Colors.black,
@@ -1977,8 +1977,8 @@ class done_capture_travil extends StatelessWidget {
                             fontWeight: FontWeight.w300,
                           ),
                         ),
-                        const SizedBox(height: 10,),
-                        const Text(
+                        SizedBox(height: 10,),
+                        Text(
                           "يوم الجمعة 15 فبراير",
                           style: TextStyle(
                             color: Color(0xffff9f00),
@@ -1998,7 +1998,7 @@ class done_capture_travil extends StatelessWidget {
         Container(
           width: width_containers,
           height: 44,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             borderRadius: BorderRadius.only(topLeft: Radius.circular(0), topRight: Radius.circular(0), bottomLeft: Radius.circular(16), bottomRight: Radius.circular(16), ),
             boxShadow: [
               BoxShadow(
@@ -2023,10 +2023,10 @@ class done_capture_travil extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: const Icon(Icons.keyboard_arrow_down,size: 18),
+                child: Icon(Icons.keyboard_arrow_down,size: 18),
               ),
-              const SizedBox(width: 3),
-              const Text(
+              SizedBox(width: 3),
+              Text(
                 "عرض باقي التفاصيل",
                 style: TextStyle(
                   color: Colors.black,
@@ -2093,13 +2093,13 @@ class button_travil_cancellation_ extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  button_(background_color: const Color(0xbf000000),text:"الغاء الرحله",onpressed: (){
+    return  button_(background_color: Color(0xbf000000),text:"الغاء الرحله",onpressed: (){
       showDialog(
         context: context,
         builder: (ctx) => AlertDialog(
-          shape: const RoundedRectangleBorder(
+          shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(10.0))),
-          title: const Text(
+          title: Text(
             "هل تريد إلغاء الرحلة!",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -2114,9 +2114,9 @@ class button_travil_cancellation_ extends StatelessWidget {
               padding: const EdgeInsets.only(right: 20,left: 20),
               child: Row(
                 children: [
-                  Expanded(child: Container(width: 123,height: 41,child: button_(onpressed: (){Navigator.of(ctx).pop();}, background_color: const Color(0xffD2D8DF), font_color: Colors.black, text: "لا",font_size: 20,))),
-                  const SizedBox(width: 20,),
-                  Expanded(child: Container(width: 123,height: 41,child: button_(onpressed: (){Navigator.of(ctx).pop();}, background_color: const Color(0xff303B7D), font_color: Colors.white, text: "نعم",font_size: 20,))),
+                  Expanded(child: Container(width: 123,height: 41,child: button_(onpressed: (){Navigator.of(ctx).pop();}, background_color: Color(0xffD2D8DF), font_color: Colors.black, text: "لا",font_size: 20,))),
+                  SizedBox(width: 20,),
+                  Expanded(child: Container(width: 123,height: 41,child: button_(onpressed: (){Navigator.of(ctx).pop();}, background_color: Color(0xff303B7D), font_color: Colors.white, text: "نعم",font_size: 20,))),
                 ],
               ),
             )
@@ -2131,16 +2131,16 @@ class button_capture_travil_ extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  button_(background_color: const Color(0xffFFAC26),text:"التقاط الرحله",onpressed: (){
+    return  button_(background_color: Color(0xffFFAC26),text:"التقاط الرحله",onpressed: (){
 
       showDialog(
         context: context,
         builder: (ctx) => AlertDialog(
-          shape: const RoundedRectangleBorder(
+          shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(10.0))),
           title: Column(
             children: [
-              const Text(
+              Text(
                 "انت الان بصدد الموافقه على الرحلة",
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -2153,7 +2153,7 @@ class button_capture_travil_ extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
+                  Text(
                     "”",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -2163,7 +2163,7 @@ class button_capture_travil_ extends StatelessWidget {
                       fontWeight: FontWeight.w300,
                     ),
                   ),
-                  const Text(
+                  Text(
                     " ريال 500 ",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -2173,7 +2173,7 @@ class button_capture_travil_ extends StatelessWidget {
                       fontWeight: FontWeight.w300,
                     ),
                   ),
-                  const Text(
+                  Text(
                     "”",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -2183,7 +2183,7 @@ class button_capture_travil_ extends StatelessWidget {
                       fontWeight: FontWeight.w300,
                     ),
                   ),
-                  const Text(
+                  Text(
                     " حصتك من الرحلة  ",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -2202,9 +2202,9 @@ class button_capture_travil_ extends StatelessWidget {
               padding: const EdgeInsets.only(right: 20,left: 20),
               child: Row(
                 children: [
-                  Expanded(child: Container(width: 123,height: 41,child: button_(onpressed: (){Navigator.of(ctx).pop();}, background_color: const Color(0xffD2D8DF), font_color: Colors.black, text: "رجوع",font_size: 20,))),
-                  const SizedBox(width: 20,),
-                  Expanded(child: Container(width: 123,height: 41,child: button_(onpressed: (){Navigator.of(ctx).pop();}, background_color: const Color(0xffFF9F00), font_color: Colors.black, text: "تاكيد",font_size: 20,))),
+                  Expanded(child: Container(width: 123,height: 41,child: button_(onpressed: (){Navigator.of(ctx).pop();}, background_color: Color(0xffD2D8DF), font_color: Colors.black, text: "رجوع",font_size: 20,))),
+                  SizedBox(width: 20,),
+                  Expanded(child: Container(width: 123,height: 41,child: button_(onpressed: (){Navigator.of(ctx).pop();}, background_color: Color(0xffFF9F00), font_color: Colors.black, text: "تاكيد",font_size: 20,))),
                 ],
               ),
             )
@@ -2224,7 +2224,7 @@ class card_template extends StatelessWidget {
       height: 216,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(25),
-        gradient: const LinearGradient(begin: Alignment.centerLeft, end: Alignment.centerRight, colors: [Color(0xffff9f00), Color(0xffffa614)], ),
+        gradient: LinearGradient(begin: Alignment.centerLeft, end: Alignment.centerRight, colors: [Color(0xffff9f00), Color(0xffffa614)], ),
       ),
       child: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -2232,7 +2232,7 @@ class card_template extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
+            Text(
               "Master Card",
               style: TextStyle(
                 color: Colors.black,
@@ -2241,7 +2241,7 @@ class card_template extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const Text(
+            Text(
               ".... .... .... ....",
               style: TextStyle(
                 color: Colors.black,
@@ -2256,7 +2256,7 @@ class card_template extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    const Text(
+                    Text(
                       "Name",
                       style: TextStyle(
                         color: Colors.black,
@@ -2265,8 +2265,8 @@ class card_template extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 3,),
-                    const Text(
+                    SizedBox(height: 3,),
+                    Text(
                       "**** ****",
                       style: TextStyle(
                         color: Colors.black,
@@ -2279,7 +2279,7 @@ class card_template extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    const Text(
+                    Text(
                       "Expiry data",
                       style: TextStyle(
                         color: Colors.black,
@@ -2288,8 +2288,8 @@ class card_template extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 3,),
-                    const Text(
+                    SizedBox(height: 3,),
+                    Text(
                       "**** / ****",
                       style: TextStyle(
                         color: Colors.black,
@@ -2310,7 +2310,7 @@ class card_template extends StatelessWidget {
                         child: Container(
                           width: 28,
                           height: 28,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.white,
                           ),
@@ -2323,7 +2323,7 @@ class card_template extends StatelessWidget {
                           child: Container(
                             width: 28,
                             height: 28,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: Color(0xafffffff),
                             ),
@@ -2358,12 +2358,12 @@ class textformfield_ extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(borderRadius),
-        color: const Color(0xfff3f4f6),
+        color: Color(0xfff3f4f6),
       ),
       child: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20),
         child: TextFormField(
-          decoration: const InputDecoration(
+          decoration: InputDecoration(
           border: InputBorder.none,
         ),
         controller: controller,

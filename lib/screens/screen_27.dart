@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart';
 
-import 'reusable_components.dart';
-import 'screen_20_f2.dart';
+import 'package:estgmam/screens/reusable_components.dart';
+import 'package:estgmam/screens/screen_20_f2.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class screen_27 extends StatefulWidget {
   const screen_27({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class _screen_27State extends State<screen_27> {
             Container(
               height: 82,
               width: double.infinity,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                   gradient: LinearGradient(
                 begin: Alignment.topRight,
                 end: Alignment.bottomLeft,
@@ -39,7 +40,7 @@ class _screen_27State extends State<screen_27> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(),
-                  const Text(
+                  Text(
                     'اضافه رصيد',
                     style: TextStyle(
                       color: Color(0xffFF9F00),
@@ -72,7 +73,7 @@ class _screen_27State extends State<screen_27> {
                               Image.asset(
                                 "assets/imgs/master_card.png",
                               )),
-                          const SizedBox(
+                          SizedBox(
                             height: 15,
                           ),
                           payment(
@@ -81,7 +82,7 @@ class _screen_27State extends State<screen_27> {
                               Image.asset(
                                 "assets/imgs/apple-pay.png",
                               )),
-                          const SizedBox(
+                          SizedBox(
                             height: 15,
                           ),
                           payment(
@@ -90,7 +91,7 @@ class _screen_27State extends State<screen_27> {
                               Image.asset(
                                 "assets/imgs/google-pay.png",
                               )),
-                          const SizedBox(
+                          SizedBox(
                             height: 15,
                           ),
                           payment(
@@ -99,7 +100,7 @@ class _screen_27State extends State<screen_27> {
                               Image.asset(
                                 "assets/imgs/paypal.png",
                               )),
-                          const SizedBox(
+                          SizedBox(
                             height: 20,
                           ),
                           button_(
@@ -109,15 +110,15 @@ class _screen_27State extends State<screen_27> {
                                   width: width_containers,
                                   height: 550,
                                   color: Colors.white,
-                                  child:const Padding(
-                                    padding: EdgeInsets.all(20.0),
+                                  child:Padding(
+                                    padding: const EdgeInsets.all(20.0),
                                     child: screen_20_f2(),
                                   ) ,
                                 );
                               });
 
                             },
-                            background_color: const Color(0x26ff9f00),
+                            background_color: Color(0x26ff9f00),
                             font_color: Colors.black,
                             text: "اضافة بطاقه جديدة",
                             borderRadius: 30,
@@ -129,7 +130,7 @@ class _screen_27State extends State<screen_27> {
                       ),
                       button_(
                         onpressed: () {},
-                        background_color: const Color(0xffFF9F00),
+                        background_color: Color(0xffFF9F00),
                         font_color: Colors.black,
                         text: "استكمال",
                         borderRadius: 30,
@@ -154,7 +155,7 @@ class _screen_27State extends State<screen_27> {
       height: 58,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: const Color(0xfff3f4f6),
+        color: Color(0xfff3f4f6),
       ),
       child: RadioListTile(
         title: Row(
@@ -162,7 +163,7 @@ class _screen_27State extends State<screen_27> {
           children: [
             Text(
               "$title",
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.black,
                 fontSize: 15,
                 fontFamily: "CoconÆ Next Arabic",
@@ -179,7 +180,7 @@ class _screen_27State extends State<screen_27> {
             val = int.parse("$value");
           });
         },
-        activeColor: const Color(0xffFF9F00),
+        activeColor: Color(0xffFF9F00),
       ),
     );
   }

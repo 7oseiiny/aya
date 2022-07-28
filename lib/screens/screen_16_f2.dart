@@ -1,6 +1,5 @@
+import 'package:estgmam/screens/reusable_components.dart';
 import 'package:flutter/material.dart';
-
-import 'reusable_components.dart';
 
 class screen_16_f2 extends StatefulWidget {
   const screen_16_f2({Key? key}) : super(key: key);
@@ -41,7 +40,7 @@ class _screen_16_f2State extends State<screen_16_f2> {
               height: double.maxFinite,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: const Color(0xfff3f4f6),
+                color: Color(0xfff3f4f6),
               ),
               child: ListView.separated(itemBuilder: (context,index)=>cities(index+1,cities_list_search[index]), separatorBuilder: (context,index)=>Container(height: 1,width: double.infinity,color: Colors.grey,), itemCount: cities_list_search.length),
             )
@@ -59,8 +58,8 @@ class _screen_16_f2State extends State<screen_16_f2> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  title,
-                  style: const TextStyle(
+                  "$title",
+                  style: TextStyle(
                     color: Colors.black,
                     fontSize: 15,
                     fontFamily: "CoconÆ Next Arabic",
@@ -76,7 +75,7 @@ class _screen_16_f2State extends State<screen_16_f2> {
                 val = int.parse("$value");
               });
             },
-            activeColor: const Color(0xffFF9F00),
+            activeColor: Color(0xffFF9F00),
           );
   }
 

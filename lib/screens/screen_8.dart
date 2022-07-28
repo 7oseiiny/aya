@@ -1,7 +1,8 @@
+
+import 'package:estgmam/screens/reusable_components.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
-
-import 'reusable_components.dart';
 
 
 class screen_8 extends StatefulWidget {
@@ -21,7 +22,7 @@ class _screen_8State extends State<screen_8> {
             Container(
               height: 82,
               width: double.infinity,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topRight,
                     end: Alignment.bottomLeft,
@@ -34,7 +35,7 @@ class _screen_8State extends State<screen_8> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(),
-                  const Text(
+                  Text(
                     'الإشعارات',
                     style: TextStyle(
                       color: Color(0xffFF9F00),
@@ -59,7 +60,7 @@ class _screen_8State extends State<screen_8> {
                   padding: const EdgeInsets.all(25.0),
                   child: Column(
                     children: [
-                      SizedBox(
+                      Container(
                         width:width_containers,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -70,14 +71,14 @@ class _screen_8State extends State<screen_8> {
                               height: 25,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(35),
-                                color: const Color.fromRGBO(241, 241, 241, 0.64),
+                                color: Color.fromRGBO(241, 241, 241, 0.64),
                               ),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  const Icon(Icons.keyboard_arrow_down_outlined, size: 15),
-                                  const SizedBox(width: 1),
-                                  const Text(
+                                  Icon(Icons.keyboard_arrow_down_outlined, size: 15),
+                                  SizedBox(width: 1),
+                                  Text(
                                     "فلتره",
                                     style: TextStyle(
                                       color: Color(0x82000000),
@@ -86,7 +87,7 @@ class _screen_8State extends State<screen_8> {
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
-                                  const SizedBox(width: 1),
+                                  SizedBox(width: 1),
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
@@ -94,27 +95,27 @@ class _screen_8State extends State<screen_8> {
                                         height: 1.69,
                                         width: 16.88,
                                         decoration: BoxDecoration(
-                                            color: const Color(0xff9E9E9E),
+                                            color: Color(0xff9E9E9E),
                                             borderRadius: BorderRadius.circular(20)),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                         height: 2,
                                       ),
                                       Container(
                                         height: 1.69,
                                         width: 11.25,
                                         decoration: BoxDecoration(
-                                            color: const Color(0xff9E9E9E),
+                                            color: Color(0xff9E9E9E),
                                             borderRadius: BorderRadius.circular(20)),
                                       ),
-                                      const SizedBox(
+                                      SizedBox(
                                         height: 2,
                                       ),
                                       Container(
                                         height: 1.69,
                                         width: 4.5,
                                         decoration: BoxDecoration(
-                                            color: const Color(0xff9E9E9E),
+                                            color: Color(0xff9E9E9E),
                                             borderRadius: BorderRadius.circular(20)),
                                       ),
                                     ],
@@ -125,13 +126,13 @@ class _screen_8State extends State<screen_8> {
                           ],
                         ),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 20,
                       ),
-                      SizedBox(
+                      Container(
                         width:width_containers,
                         child: Row(
-                          children: const [
+                          children: [
                             Text(
                               '7/6/2022',
                               textAlign: TextAlign.left,
@@ -162,26 +163,26 @@ class _screen_8State extends State<screen_8> {
                           ],
                         ),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 10,
                       ),
                       Container(
                           width: width_containers,
                           height: 52,
                           decoration: BoxDecoration(
-                            borderRadius: const BorderRadius.only(
+                            borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(3),
                               topRight: Radius.circular(3),
                               bottomLeft: Radius.circular(3),
                               bottomRight: Radius.circular(3),
                             ),
-                            color: const Color.fromRGBO(243, 244, 246, 1),
+                            color: Color.fromRGBO(243, 244, 246, 1),
                             border: Border.all(
-                              color: const Color.fromRGBO(216, 216, 216, 1),
+                              color: Color.fromRGBO(216, 216, 216, 1),
                               width: 1,
                             ),
                           ),
-                          child: const Center(
+                          child: Center(
                             child: Text(
                               "مبروك لقد تم قبولك علي استجمام تستطيع الان استقبال\nطلباتك الجديدة",
                               textAlign: TextAlign.right,
@@ -193,14 +194,14 @@ class _screen_8State extends State<screen_8> {
                               ),
                             ),
                           )),
-                      const SizedBox(
+                      SizedBox(
                         height: 30,
                       ),
-                      const new_notification(),
+                      new_notification(),
                       Container(
                         width: width_containers,
                         height: 44,
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(topLeft: Radius.circular(0), topRight: Radius.circular(0), bottomLeft: Radius.circular(16), bottomRight: Radius.circular(16), ),
                           boxShadow: [
                             BoxShadow(
@@ -233,10 +234,10 @@ class _screen_8State extends State<screen_8> {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
                                 ),
-                                child: const Icon(Icons.keyboard_arrow_down,size: 18),
+                                child: Icon(Icons.keyboard_arrow_down,size: 18),
                               ),
-                              const SizedBox(width: 3),
-                              const Text(
+                              SizedBox(width: 3),
+                              Text(
                                 "عرض باقي التفاصيل",
                                 style: TextStyle(
                                   color: Colors.black,
@@ -249,14 +250,14 @@ class _screen_8State extends State<screen_8> {
                           ),
                         ),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 30,
                       ),
-                      allinformation==true?const all_information():Container(),
+                      allinformation==true?all_information():Container(),
                       allinformation==true?Container(
                         width: width_containers,
                         height: 44,
-                        decoration: const BoxDecoration(
+                        decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(topLeft: Radius.circular(0), topRight: Radius.circular(0), bottomLeft: Radius.circular(16), bottomRight: Radius.circular(16), ),
                           boxShadow: [
                             BoxShadow(
@@ -289,10 +290,10 @@ class _screen_8State extends State<screen_8> {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(8),
                                 ),
-                                child: const Icon(Icons.keyboard_arrow_up,size: 18),
+                                child: Icon(Icons.keyboard_arrow_up,size: 18),
                               ),
-                              const SizedBox(width: 3),
-                              const Text(
+                              SizedBox(width: 3),
+                              Text(
                                 "تفاصيل أقل ",
                                 style: TextStyle(
                                   color: Colors.black,
@@ -305,23 +306,23 @@ class _screen_8State extends State<screen_8> {
                           ),
                         ),
                       ):Container(),
-                      const SizedBox(
+                      SizedBox(
                         height: 30,
                       ),
-                      const flight_cancellation(),
-                      const SizedBox(
+                      flight_cancellation(),
+                      SizedBox(
                         height: 30,
                       ),
-                      const new_review(),
-                      const SizedBox(
+                      new_review(),
+                      SizedBox(
                         height: 30,
                       ),
-                      const done_send_travil(),
-                      const SizedBox(
+                      done_send_travil(),
+                      SizedBox(
                         height: 30,
                       ),
-                      const done_capture_travil(),
-                      const SizedBox(
+                      done_capture_travil(),
+                      SizedBox(
                         height: 30,
                       ),
 

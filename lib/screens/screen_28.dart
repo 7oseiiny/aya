@@ -1,6 +1,6 @@
+import 'package:estgmam/screens/reusable_components.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'reusable_components.dart';
 
 class screen_28 extends StatefulWidget {
   const screen_28({Key? key}) : super(key: key);
@@ -24,7 +24,7 @@ class _screen_28State extends State<screen_28> {
             Container(
               height: 82,
               width: double.infinity,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topRight,
                     end: Alignment.bottomLeft,
@@ -37,7 +37,7 @@ class _screen_28State extends State<screen_28> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(),
-                  const Text(
+                  Text(
                     'الإشعارات',
                     style: TextStyle(
                       color: Color(0xffFF9F00),
@@ -68,35 +68,35 @@ class _screen_28State extends State<screen_28> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
-                            const card_template(),
-                            const SizedBox(height: 20,),
-                            const Text(' الأسم',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                            const SizedBox(height: 10,),
+                            card_template(),
+                            SizedBox(height: 20,),
+                            Text(' الأسم',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                            SizedBox(height: 10,),
                             textformfield_(controller: name),
-                            const SizedBox(height: 20,),
-                            const Text('رقم البطاقة',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                            const SizedBox(height: 10,),
+                            SizedBox(height: 20,),
+                            Text('رقم البطاقة',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                            SizedBox(height: 10,),
                             textformfield_(controller: id),
-                            const SizedBox(height: 20,),
+                            SizedBox(height: 20,),
                             Row(
                               children: [
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     children: [
-                                      const Text(' MM/YY',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                                      const SizedBox(height: 15,),
+                                      Text(' MM/YY',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                                      SizedBox(height: 15,),
                                       textformfield_(controller: MM_YY),
                                     ],
                                   ),
                                 ),
-                                const SizedBox(width: 50,),
+                                SizedBox(width: 50,),
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.end,
                                     children: [
-                                      const Text(' CVV',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                                      const SizedBox(height: 15,),
+                                      Text(' CVV',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                                      SizedBox(height: 15,),
                                       textformfield_(controller: CVV),
                                     ],
                                   ),
@@ -107,7 +107,7 @@ class _screen_28State extends State<screen_28> {
                         ),
                         button_(
                           onpressed: () {},
-                          background_color: const Color(0xffFF9F00),
+                          background_color: Color(0xffFF9F00),
                           font_color: Colors.black,
                           text: "اضافة البطاقة",
                           borderRadius: 30,

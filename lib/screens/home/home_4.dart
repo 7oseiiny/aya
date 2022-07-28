@@ -1,6 +1,8 @@
+import 'package:estgmam/admin/home5.dart';
+import 'package:estgmam/screens/home/home.dart';
+import 'package:estgmam/screens/home/home_5.dart';
+import 'package:estgmam/screens/home/r_s_home.dart';
 import 'package:flutter/material.dart';
-
-import 'r_s_home.dart';
 
 class home_4 extends StatefulWidget {
   const home_4({Key? key}) : super(key: key);
@@ -40,7 +42,7 @@ class _home_4State extends State<home_4> {
                   height: 29,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
-                    color: const Color(0xffff9f00),
+                    color: Color(0xffff9f00),
                   ),
                   child: Image.asset("assets/imgs/search.png",),
                 ),
@@ -50,14 +52,14 @@ class _home_4State extends State<home_4> {
                 height: 29,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  color: const Color(0xfff3f4f6),
+                  color: Color(0xfff3f4f6),
                 ),
               ),
-              const SizedBox(width: 5,),
+              SizedBox(width: 5,),
               Expanded(child: textformfield_home(controller: search,height: 29,borderRadius: 5,))
             ],
           ),
-          const SizedBox(
+          SizedBox(
             height: 10,
           ),
           Padding(
@@ -70,11 +72,11 @@ class _home_4State extends State<home_4> {
                   height: 22,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xfff3f4f6),
+                    color: Color(0xfff3f4f6),
                   ),
                   child:Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       Text(
                         "تصفية",
                         style: TextStyle(
@@ -93,11 +95,11 @@ class _home_4State extends State<home_4> {
                   height: 22,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: const Color(0xffff9f00),
+                    color: Color(0xffff9f00),
                   ),
                   child:Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
 
                       Text(
                         "رحلة جديدة",
@@ -123,7 +125,7 @@ class _home_4State extends State<home_4> {
               ],
             ),
           ),
-          const SizedBox(
+          SizedBox(
             height: 20,
           ),
           Container(
@@ -131,13 +133,13 @@ class _home_4State extends State<home_4> {
             height: 27,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
-              color: const Color(0xfff3f4f6),
+              color: Color(0xfff3f4f6),
             ),
             child: Padding(
               padding: const EdgeInsets.only(right: 15),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
-                children: const [
+                children: [
                   Text(
                     " ( 200 رحلة )",
                     style: TextStyle(
@@ -161,13 +163,15 @@ class _home_4State extends State<home_4> {
               ),
             ),
           ),
-          const SizedBox(
+          SizedBox(
             height: 20,
           ),
-          SizedBox(
+          Container(
             height:90*number.length+10 ,
-            child: ListView.separated(itemBuilder: ((context, index) => last_travil_container(price[index],time[index],name[index],tybe_travil[index],wait[index],location[index],number[index],image[index])
-            ), separatorBuilder: (context, index) =>  const SizedBox(height: 10,), itemCount: time.length
+            child: ListView.separated(itemBuilder: ((context, index) => last_travil_container((){currentIndex =0;setState(() {
+
+            });},price[index],time[index],name[index],tybe_travil[index],wait[index],location[index],number[index],image[index])
+            ), separatorBuilder: (context, index) =>  SizedBox(height: 10,), itemCount: time.length
               ,physics: const ClampingScrollPhysics(),
 
             ),
@@ -179,176 +183,178 @@ class _home_4State extends State<home_4> {
       ),
     );
   }
-  Container last_travil_container(double price , String time , String name , String tybeTravil, String wait , String location, int number,Image image) {
-    if (tybeTravil=='رحله جديده'){color_tybe_travel=const Color(0xffCE372A);}
-    else if (tybeTravil=='تم الالتقاط'){color_tybe_travel=const Color(0xff518EF3);}
-    else if (tybeTravil=='تم الدفع'){color_tybe_travel=const Color(0xff73DC7A);}
-    else if (tybeTravil=='اكتملت الرحله'){color_tybe_travel=const Color(0xffFF9F00);}
-    return Container(
-      width: double.infinity,
-      height: 80,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(5),
-        color: const Color(0xfff3f4f6),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              children: [
-                Text(
-                  "$price ر.س",
-                  style: const TextStyle(
-                    color: Color(0xffff9f00),
-                    fontSize: 10,
-                    fontFamily: "CoconÆ Next Arabic",
-                    fontWeight: FontWeight.w300,
+  GestureDetector last_travil_container(GestureTapCallback function, double price , String time , String name , String tybe_travil, String wait , String location, int number,Image image) {
+    if (tybe_travil=='رحله جديده'){color_tybe_travel=Color(0xffCE372A);}
+    else if (tybe_travil=='تم الالتقاط'){color_tybe_travel=Color(0xff518EF3);}
+    else if (tybe_travil=='تم الدفع'){color_tybe_travel=Color(0xff73DC7A);}
+    else if (tybe_travil=='اكتملت الرحله'){color_tybe_travel=Color(0xffFF9F00);}
+    return GestureDetector(onTap: function,
+      child: Container(
+        width: double.infinity,
+        height: 80,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
+          color: Color(0xfff3f4f6),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                children: [
+                  Text(
+                    "$price ر.س",
+                    style: TextStyle(
+                      color: Color(0xffff9f00),
+                      fontSize: 10,
+                      fontFamily: "CoconÆ Next Arabic",
+                      fontWeight: FontWeight.w300,
+                    ),
                   ),
-                ),
-                Text(
-                  time,
-                  style: const TextStyle(
-                    color: Color(0x59000000),
-                    fontSize: 8,
-                    fontFamily: "CoconÆ Next Arabic",
-                    fontWeight: FontWeight.w300,
+                  Text(
+                    "$time",
+                    style: TextStyle(
+                      color: Color(0x59000000),
+                      fontSize: 8,
+                      fontFamily: "CoconÆ Next Arabic",
+                      fontWeight: FontWeight.w300,
+                    ),
                   ),
-                ),
-                const timer_home()
-              ],
-            ),
-            Row(
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    const SizedBox(height: 5,),
-                    Row(
-                      children: [
-                        SizedBox(
-                          width: 39,
-                          height: 11,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children:[
-                              Container(
-                                width: 39,
-                                height: 11,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  color: color_tybe_travel,
-                                ),
-                                padding: const EdgeInsets.only(bottom: 2, ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children:[
-                                    Text(
-                                      tybeTravil,
-                                      style: const TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 7,
-                                        fontFamily: "CoconÆ Next Arabic",
-                                        fontWeight: FontWeight.w300,
+                  timer_home()
+                ],
+              ),
+              Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      SizedBox(height: 5,),
+                      Row(
+                        children: [
+                          Container(
+                            width: 39,
+                            height: 11,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children:[
+                                Container(
+                                  width: 39,
+                                  height: 11,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: color_tybe_travel,
+                                  ),
+                                  padding: const EdgeInsets.only(bottom: 2, ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    children:[
+                                      Text(
+                                        "$tybe_travil",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 7,
+                                          fontFamily: "CoconÆ Next Arabic",
+                                          fontWeight: FontWeight.w300,
+                                        ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 5,),
-                        Text(
-                          name,
-                          style: const TextStyle(
-                            color: Colors.black,
-                            fontSize: 13,
-                            fontFamily: "CoconÆ Next Arabic",
-                            fontWeight: FontWeight.w300,
-                          ),
-                        )
+                          SizedBox(width: 5,),
+                          Text(
+                            "$name",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontFamily: "CoconÆ Next Arabic",
+                              fontWeight: FontWeight.w300,
+                            ),
+                          )
 
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          wait,
-                          style: const TextStyle(
-                            color: Color(0x59000000),
-                            fontSize: 9,
-                            fontFamily: "CoconÆ Next Arabic",
-                            fontWeight: FontWeight.w300,
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "$wait",
+                            style: TextStyle(
+                              color: Color(0x59000000),
+                              fontSize: 9,
+                              fontFamily: "CoconÆ Next Arabic",
+                              fontWeight: FontWeight.w300,
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 5,),
+                          SizedBox(width: 5,),
 
-                        Container(
-                          width: 4,
-                          height: 4,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color:color_tybe_travel,
+                          Container(
+                            width: 4,
+                            height: 4,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color:color_tybe_travel,
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 10,),
+                          SizedBox(width: 10,),
 
-                        SizedBox(
-                          width: 34,
-                          height: 13,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children:[
-                              Text(
-                                location,
-                                style: const TextStyle(
-                                  color: Color(0x59000000),
-                                  fontSize: 9,
-                                  fontFamily: "CoconÆ Next Arabic",
-                                  fontWeight: FontWeight.w300,
+                          Container(
+                            width: 34,
+                            height: 13,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children:[
+                                Text(
+                                  "$location",
+                                  style: TextStyle(
+                                    color: Color(0x59000000),
+                                    fontSize: 9,
+                                    fontFamily: "CoconÆ Next Arabic",
+                                    fontWeight: FontWeight.w300,
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(width: 3),
-                              Container(
-                                width: 6,
-                                height: 7.33,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
+                                SizedBox(width: 3),
+                                Container(
+                                  width: 6,
+                                  height: 7.33,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Image.asset("assets/imgs/location.png",),
                                 ),
-                                child: Image.asset("assets/imgs/location.png",),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
-                        ),
-                        const SizedBox(width: 10,),
+                          SizedBox(width: 10,),
 
-                        Text(
-                          "$number#",
-                          style: const TextStyle(
-                            color: Color(0x59000000),
-                            fontSize: 9,
-                            fontFamily: "CoconÆ Next Arabic",
-                            fontWeight: FontWeight.w300,
-                          ),
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-                const SizedBox(width: 10,),
-                CircleAvatar(backgroundColor: const Color(0xfff3f4f6),radius: 30,
-                  child:image ,)
-              ],
-            )
-          ],
+                          Text(
+                            "$number#",
+                            style: TextStyle(
+                              color: Color(0x59000000),
+                              fontSize: 9,
+                              fontFamily: "CoconÆ Next Arabic",
+                              fontWeight: FontWeight.w300,
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(width: 10,),
+                  CircleAvatar(backgroundColor: Color(0xfff3f4f6),radius: 30,
+                    child:image ,)
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );

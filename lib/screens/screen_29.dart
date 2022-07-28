@@ -1,5 +1,5 @@
+import 'package:estgmam/screens/reusable_components.dart';
 import 'package:flutter/material.dart';
-import 'reusable_components.dart';
 
 class screen_29 extends StatefulWidget {
   const screen_29({Key? key}) : super(key: key);
@@ -27,7 +27,7 @@ class _screen_27State extends State<screen_29> {
             Container(
               height: 82,
               width: double.infinity,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topRight,
                     end: Alignment.bottomLeft,
@@ -40,7 +40,7 @@ class _screen_27State extends State<screen_29> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(),
-                  const Text(
+                  Text(
                     'اضافه رصيد',
                     style: TextStyle(
                       color: Color(0xffFF9F00),
@@ -68,18 +68,18 @@ class _screen_27State extends State<screen_29> {
                       Column(
                         children: [
                           link_master_card==false?payment_without_link((){link_master_card=true;setState(() {});},"**** **** **** 4679",Image.asset("assets/imgs/master_card.png",)) :payment(1, "**** **** **** **** 4679", Image.asset("assets/imgs/master_card.png",)),
-                          const SizedBox(height: 15,),
+                          SizedBox(height: 15,),
                           link_apple_pay==false?payment_without_link(() {link_apple_pay=true;setState(() {});}, "",Image.asset("assets/imgs/apple-pay.png",) ):payment(2, "", Image.asset("assets/imgs/apple-pay.png",)),
-                          const SizedBox(height: 15,),
+                          SizedBox(height: 15,),
                           link_google_pay==false?payment_without_link(() { link_google_pay=true;setState(() {});}, "", Image.asset("assets/imgs/google-pay.png")):payment(3, "", Image.asset("assets/imgs/google-pay.png",)),
-                          const SizedBox(height: 15,),
+                          SizedBox(height: 15,),
                           link_paypal==false?payment_without_link(() { link_paypal=true;setState(() {});}, "", Image.asset("assets/imgs/paypal.png",)):payment(4, "", Image.asset("assets/imgs/paypal.png",)),
-                          const SizedBox(height: 20,),
+                          SizedBox(height: 20,),
                         ],
                       ),
                       button_(
                         onpressed: () {},
-                        background_color: const Color(0xffFF9F00),
+                        background_color: Color(0xffFF9F00),
                         font_color: Colors.black,
                         text: "استكمال",
                         borderRadius: 30,
@@ -104,15 +104,15 @@ class _screen_27State extends State<screen_29> {
       height: 58,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: const Color(0xfff3f4f6),
+        color: Color(0xfff3f4f6),
       ),
       child: RadioListTile(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              title,
-              style: const TextStyle(
+              "$title",
+              style: TextStyle(
                 color: Colors.black,
                 fontSize: 15,
                 fontFamily: "CoconÆ Next Arabic",
@@ -129,7 +129,7 @@ class _screen_27State extends State<screen_29> {
             val = int.parse("$value");
           });
         },
-        activeColor: const Color(0xffFF9F00),
+        activeColor: Color(0xffFF9F00),
       ),
     );
   }
@@ -140,7 +140,7 @@ class _screen_27State extends State<screen_29> {
       height: 58,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: const Color(0xfff3f4f6),
+        color: Color(0xfff3f4f6),
       ),
       child: Padding(
         padding: const EdgeInsets.only(right: 20,left: 20),
@@ -149,10 +149,10 @@ class _screen_27State extends State<screen_29> {
           children: [
             TextButton(
               onPressed: function,
-              child: const Text("ربط الخدمه")),
+              child: Text("ربط الخدمه")),
             Text(
-              title,
-              style: const TextStyle(
+              "$title",
+              style: TextStyle(
                 color: Colors.black,
                 fontSize: 15,
                 fontFamily: "CoconÆ Next Arabic",

@@ -1,10 +1,11 @@
+import 'package:estgmam/screens/home/home_1.dart';
+import 'package:estgmam/screens/home/home_2.dart';
+import 'package:estgmam/screens/home/home_3.dart';
+import 'package:estgmam/screens/home/home_4.dart';
+import 'package:estgmam/screens/home/home_5.dart';
+import 'package:estgmam/screens/home/home_7.dart';
 import 'package:flutter/material.dart';
-
-import 'home_1.dart';
-import 'home_2.dart';
-import 'home_3.dart';
-import 'home_4.dart';
-import 'home_5.dart';
+int currentIndex =4;
 
 class home extends StatefulWidget {
   const home({Key? key}) : super(key: key);
@@ -14,8 +15,8 @@ class home extends StatefulWidget {
 }
 
 class _homeState extends State<home> {
-  int currentIndex =4;
-  List<Widget> screens =[const home_5(),const home_4(),const home_3(),const home_2(),const home_1()];
+  Color? color ;
+  List<Widget> screens =[home_7(),home_4(),home_3(),home_2(),home_1()];
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -26,7 +27,7 @@ class _homeState extends State<home> {
             Container(
               height: 80,
               width: double.infinity,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 color: Colors.white,
               ),
               child: Row(
@@ -54,7 +55,7 @@ class _homeState extends State<home> {
         bottomNavigationBar: BottomNavigationBar(
           showSelectedLabels: false,
           showUnselectedLabels: false,
-          backgroundColor: const Color(0xffFF9F00),
+          backgroundColor: Color(0xffFF9F00),
           type: BottomNavigationBarType.fixed,
           currentIndex: currentIndex,
           onTap: (index) {
@@ -63,7 +64,7 @@ class _homeState extends State<home> {
           },
           items:  [
             BottomNavigationBarItem(icon: Image.asset("assets/imgs/mo.png",), label: 'المزيد'),
-            BottomNavigationBarItem(icon: currentIndex==4? Image.asset("assets/imgs/t_s.png",):Image.asset("assets/imgs/t.png",), label: 'الرحلات'),
+            BottomNavigationBarItem(icon: currentIndex==4? Image.asset("assets/imgs/t.png",):Image.asset("assets/imgs/t.png",color: Colors.red,), label: 'الرحلات'),
             BottomNavigationBarItem(icon: Image.asset("assets/imgs/plus.png",), label: ''),
             BottomNavigationBarItem(icon: Image.asset("assets/imgs/m.png",), label: 'الرسائل'),
             BottomNavigationBarItem(icon:currentIndex==4? Image.asset("assets/imgs/h_s.png",):Image.asset("assets/imgs/h.png",), label: 'الرئيسية'),
